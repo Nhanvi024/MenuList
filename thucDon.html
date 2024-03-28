@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nấu tiệc Toàn Tâm |  Thực Đơn</title>
+    <link rel="stylesheet" href="./Style/headFoot-style.css">
+    <link rel="stylesheet" href="./Style/thucDon-style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://media.loveitopcdn.com/5536/thumb/140406-logo.png">
+
+    <!-- cai nay` la` embed facebook, chay console.log bao' loi~ thi` comment 2 cai div la script phia duoi -->
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0"
+        nonce="Ri1T0HxM"></script> -->
+    <!--  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lobster&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- --------------------------------------- -->
+    <!-- HEADER -->
+    <div id="header1">
+        <div style="align-self: center;">
+            <img src="./media/headFoot/header logo-1.webp" alt="">
+        </div>
+    </div>
+    <div id="header2">
+        <ul id="navi">
+            <li><a href="./trangChu.html" target="_blank" class="navi-select">Trang chủ</a></li>
+            <li><a href="./dichVu.html" target="_blank" class="navi-select">Dịch vụ</a></li>
+            <li><a href="./thucDon.html" target="_blank" class="navi-select">Thực đơn</a></li>
+            <li><a href="./khachDatTiec.html" target="_blank" class="navi-select">Khách đặt tiệc</a></li>
+            <li><a href="./lienHe.html" target="_blank" class="navi-select">Liên Hệ</a></li>
+        </ul>
+    </div>
+    <!-- --------------------------------------- -->
+    <!-- BODY -->
+    <!-- <div class="test"> -->
+    <div class="Content">
+        
+            <div class="popupPayment">
+                <div class="contactCustomer">
+                    <div>
+                        <label>Họ và tên:<span class="redasterisk">*</span></label><br>
+                        <input id="fullName" type="text" placeholder="Nhập họ và tên">
+                        <p id="errorName"></p>
+                    </div>
+                    <div>
+                        <label>Số điện thoại:<span class="redasterisk">*</span></label><br>
+                        <input id="phoneNumber" type="text" placeholder="Nhập số điện thoại">
+                        <p id="errorPhone"></p>
+                    </div>
+                    <div>
+                        <label>Email:<span class="redasterisk">*</span></label><br>
+                        <input id="emailAdd" type="text" placeholder="Nhập email">
+                        <p id="errorEmail"></p>
+
+                    </div>
+                    <div>
+                        <label>Địa chỉ:<span class="redasterisk">*</span></label><br>
+                        <input  id="address" type="text" placeholder="Nhập địa chỉ">
+                        <p id="errorAdd"></p>
+
+                    </div>
+                    <div >
+                        <label>Hình thức thanh toán</label><br>
+                        <input type="radio" checked name="payment" id="Cash">
+                        <label class="paymentTitle" for="Cash" name="payment">Tiền mặt - COD</label> <br>   
+                        <input type="radio" name="payment" id="Bank">
+                        <label class="paymentTitle" for="Bank" name="payment">Chuyển khoản ngân hàng</label>
+    
+                    </div>
+                    <div>
+                        <label id="address">Ghi chú: </label><br>
+                        <textarea name="Note" id="textArea" cols="30" rows="10" placeholder="Nhập ghi chú:"></textarea>
+                    </div>
+                </div>
+                <div class="paymentOrderList">
+                    <div class="priceOrderList" >
+                    </div>
+                    <div class="paymentTotal">
+                        <p>Thành tiền: <span id="pay_totalPrice"></span></p>
+                        <div>
+                            <button type="submit" id="pay_btnOrder" onclick=handleOrderAccept()>Xác Nhận Đặt Hàng</button>
+                            <button id="btnHidePopup" onclick=handleHidePopup()>Tiếp Chọn Món</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="fullScreen">
+            </div>
+        
+        <section class="section">
+            <div class="Filter">
+                <div>
+                    <button onclick=handlePrePage()>&#8656;</button>
+                    <button onclick=handleNextPage()>&#8658;</button>
+                    <p id="textPage"></p>
+                </div>
+                
+
+                <h2>Thực Đơn</h2>
+                <select name="Sort" id="sortDishes" onchange=handleSortSelect()>
+                    <option value="0">Sắp xếp</option>
+                    <option value="1">Giá tăng dần</option>
+                    <option value="2">Giá giảm dần</option>
+                    <option value="3">Tên món (A-Z)</option>
+                    <option value="4">Tên món (Z-A)</option>
+                </select>
+                
+            </div>
+            <div class="Menu">
+            </div>
+
+        </section>
+        <div class="orderList">
+            <div class="invoice">
+                <div class="dishOrderlist">
+
+                </div>
+                <div class="Total">
+                    <p>Thành tiền: <span id="totalPrice"></span></p>
+                    <button id="btnOrder" onclick=handleOrderAccept()>Tiến hành đặt món &#10159;</button>
+
+                </div>
+            </div>
+        </div>
+        <div id="numberOrder">
+        </div>
+    <img id="iconList" src="./media/thucDon/icon_Listorder.png" alt="OrderList">
+        
+    </div>
+    
+    <!-- </div> -->
+    <div></div>
+    <!-- --------------------------------------- -->
+    <!-- FOOTER -->
+    <div id="footer1">
+        <div id="footer1Content">
+            <div>
+                <p style="font-size: 20px;">LIÊN HỆ<br>
+                    Nấu tiệc tại nhà Toàn Tâm<br>
+                    Hotline: <span style="color: lightgreen;">0902.485.399</span> <span style="color: lightgreen;"> -
+                        0909.323.459</span><br>
+                    Email: <span>nautiectainhatoantam</span> <span>@gmail.com</span><br>
+                    Thời gian làm việc:<br>
+                    8:00 (Sáng) - 19:00 (Tối), Thứ hai - Chủ nhật
+                </p>
+            </div>
+            <div>
+                <p style="font-size: 20px;">CHÍNH SÁCH BÁN HÀNG</p>
+            </div>
+            <div>
+                <div>
+                    <p style="font-size: 20px;">FANPAGE</p>
+                </div>
+                <div class="fb-page" data-href="https://www.facebook.com/nautiectoantam/" data-tabs="timeline"
+                    data-width="250" data-height="200" data-small-header="false" data-adapt-container-width="true"
+                    data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/nautiectoantam/" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/nautiectoantam/">NẤU TIỆC TOÀN TÂM</a></blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer2">
+        <div id="footer2Content">
+            <span style="font-size: 20px;">NẤU TIỆC TẠI NHÀ TOÀN TÂM - TOÀN TÂM TẠO CHỮ TÍN </span><br><br>
+            NẤU TIỆC TẠI NHÀ TOÀN TÂM - Không ngon không tính tiền, phục vụ tận nơi theo yêu cầu quý khách.
+            Chúng
+            tôi cam kết rằng quý vị lần đầu tiên đến với chúng tôi đặt tiệc dù 1 MÓN, 1 BÀN hay HÀNG TRĂM BÀN,
+            chắc
+            chắn quý vị không quên Đặt tiệc tại nhà Toàn Tâm. Nấu tiệc tại nhà Toàn Tâm chuyên cung cấp các dịch
+            vụ
+            tiệc tại nhà (tiệc gia đình), tiệc công ty, gồm tiệc tất niên, tiệc sinh nhật, tiệc thôi nôi,
+            tiệc
+            mừng thọ, tiệc kỷ niệm, tiệc tân gia, đám giỗ, …
+        </div>
+    </div>
+    <script src="./Script/thucDon-script.js"></script>
+</body>
+
+</html>

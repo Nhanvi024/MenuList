@@ -1,0 +1,193 @@
+
+{
+    "dishes":[
+    {
+        "name":"Bò Bóp Thấu",
+        "price_text": "350.000 VND",
+        "price": 350000,
+        "quantities": 1,
+        "image": "./media/thucDon/BoBopThau.jpg"
+    },
+    {
+        "name":"Nem Nướng Bánh Hỏi",
+        "price_text": "280.000 VND",
+        "price": 280000,
+        "quantities": 1,
+        "image": "./media/thucDon/NemNuongBanhHoi.jpg"
+    },
+    {
+        "name":"Lưỡi Heo Nấu Lagu",
+        "price_text": "400.000 VND",
+        "price": 400000,
+        "quantities": 1,
+        "image": "./media/thucDon/LuoiheonauLagu.jpg"
+    },
+    {
+        "name":"Heo Rừng Né",
+        "price_text": "380.000 VND",
+        "price": 380000,
+        "quantities": 1,
+        "image": "./media/thucDon/Heorungne.jpg"
+    },
+    {
+        "name":"Sườn Heo Nấu Tiêu Xanh",
+        "price_text": "400.000 VND",
+        "price": 400000,
+        "quantities": 1,
+        "image": "./media/thucDon/Suonheonautieuxanh.jpg"
+    },
+    {
+        "name":"Sườn Nấu Đậu",
+        "price_text": "400.000 VND",
+        "price": 400000,
+        "quantities": 1,
+        "image": "./media/thucDon/Suonnaudau.jpg"
+    },
+    {
+        "name":"Đùi Gà Quay",
+        "price_text": "330.000 VND",
+        "price": 330000,
+        "quantities": 1,
+        "image": "./media/thucDon/Duigaquay.jpg"
+    },
+    {
+        "name":"Gà Chiên Nước Mắm",
+        "price_text": "330.000 VND",
+        "price": 330000,
+        "quantities": 1,
+        "image": "./media/thucDon/Canhgachiennuocmam.jpg"
+    },
+    {
+        "name":"Gà Hấp Nấm Đông Cô",
+        "price_text": "400.000 VND",
+        "price": 400000,
+        "quantities": 1,
+        "image": "./media/thucDon/Gahapnamdongco.jpg"
+    },
+    {
+        "name":"Gà Bó Xôi",
+        "price_text": "280.000 VND",
+        "price": 280000,
+        "quantities": 1,
+        "image": "./media/thucDon/Gaboxoi.jpg"
+    },
+    {
+        "name":"Giò Heo Chiên Giòn",
+        "price_text": "500.000 VND",
+        "price": 500000,
+        "quantities": 1,
+        "image": "./media/thucDon/Gioheochiengion.jpg"
+    },
+
+    {
+        "name":"Chả Chay Chiên Xù",
+        "price_text": "220.000 VND",
+        "price": 220000,
+        "quantities": 1,
+        "image": "./media/thucDon/Chachaychienxu.jpg"
+    },
+
+    {
+        "name":"Chả Giò Chay",
+        "price_text": "220.000 VND",
+        "price": 220000,
+        "quantities": 1,
+        "image": "./media/thucDon/Chagiochay.jpg"
+    },
+
+    {
+        "name":"Heo Quay Bánh Bao Chay",
+        "price_text": "300.000 VND",
+        "price": 300000,
+        "quantities": 1,
+        "image": "./media/thucDon/Heoquaybanhbaochay.jpg"
+    },
+
+    {
+        "name":"Heo Quay Bánh Hỏi Chay",
+        "price_text": "300.000 VND",
+        "price": 300000,
+        "quantities": 1,
+        "image": "./media/thucDon/Heoquaybanhhoichay.jpg"
+    },
+
+    {
+        "name":"Lẩu Hoa Đồng Nội",
+        "price_text": "350.000 VND",
+        "price": 350000,
+        "quantities": 1,
+        "image": "./media/thucDon/Lauhoadongnoi.jpg"
+    },
+
+    {
+        "name":"Lẩu Nấm Chay",
+        "price_text": "320.000 VND",
+        "price": 320000,
+        "quantities": 1,
+        "image": "./media/thucDon/Launamchay.jpg"
+    },
+    {
+        "name":"Lẩu Nấm Tiềm Thuốc Bắc",
+        "price_text": "350.000 VND",
+        "price": 350000,
+        "quantities": 1,
+        "image": "./media/thucDon/Launamtiemthuocbac.jpg"
+    },
+    {
+        "name":"Lẩu Thái Chay",
+        "price_text": "320.000 VND",
+        "price": 320000,
+        "quantities": 1,
+        "image": "./media/thucDon/Lauthaichay.jpg"
+    },
+    {
+        "name":"Miến Xào Nấm",
+        "price_text": "280.000 VND",
+        "price": 280000,
+        "quantities": 1,
+        "image": "./media/thucDon/Mienxaonam.jpg"
+    },
+    {
+        "name":"Miến Xào Thập Cẩm Chay",
+        "price_text": "250.000 VND",
+        "price": 250000,
+        "quantities": 1,
+        "image": "./media/thucDon/Mienxaothapcamchay.jpg"
+    },
+    {
+        "name":"Mì Xào Nấm Chay",
+        "price_text": "210.000 VND",
+        "price": 210000,
+        "quantities": 1,
+        "image": "./media/thucDon/Mixaonamchay.jpg"
+    },
+    {
+        "name":"Súp Bắp Nấm Tuyết",
+        "price_text": "300.000 VND",
+        "price": 300000,
+        "quantities": 1,
+        "image": "./media/thucDon/Supbapnamtuyet.jpg"
+    },
+    {
+        "name":"Súp Ngũ Quả Chay",
+        "price_text": "280.000 VND",
+        "price": 280000,
+        "quantities": 1,
+        "image": "./media/thucDon/Supnguquachay.jpg"
+    },
+    {
+        "name":"Gỏi thập cẩm tôm thịt",
+        "price_text": "300.000 VND",
+        "price": 300000,
+        "quantities": 1,
+        "image": "./media/thucDon/Goithapcam.jpg"
+    },
+    {
+        "name":"Súp Tóc Tiên Chay",
+        "price_text": "250.000 VND",
+        "price": 250000,
+        "quantities": 1,
+        "image": "./media/thucDon/Suptoctienchay.jpg"
+    }
+    ]
+}

@@ -1,0 +1,715 @@
+div.Content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+    /* border: 1px solid red; */
+    section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div.Filter {
+            width: 95%;
+            height: 100px;
+            padding: 0 20px 0 30px;
+            margin: 0;
+
+            background: #dfdfdf;
+            background-image: linear-gradient(to bottom right, rgb(182, 243, 254), rgb(253, 220, 131));
+
+            background-size: contain;
+
+            background-size: contain;
+            background-repeat: repeat-x;
+
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: sticky;
+            top: 50px;
+
+            h2 {
+                font-size: 60px;
+                padding: 0;
+                margin: 15px;
+                font-family: "Great Vibes", cursive;
+                font-weight: bold;
+                font-style: normal;
+
+            }
+
+            select {
+                width: 20%;
+                height: 35px;
+                border-radius: 3px;
+                position: absolute;
+                top: 25px;
+                right: 5%;
+                font-size: 16px;
+                transition: 0.5s;
+            }
+
+            select:hover {
+                width: 20.3%;
+                height: 37px;
+            }
+
+            div {
+                width: 220px;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                p {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+                border: 1px solid rgba(128, 128, 128, 0.397);
+                background: white;
+                font-size: 25px;
+                font-weight: bold;
+                color: #575757;
+                transition: 0.5s;
+            }
+
+            button:hover {
+                background: #ff0000;
+                color: white;
+                width: 43px;
+                height: 43px;
+            }
+
+
+
+        }
+
+        div.Menu {
+            width: 95%;
+            height: auto;
+            flex-wrap: wrap;
+            margin: 5px 0 0 0px;
+
+            background: #dfdfdf;
+            background-image: radial-gradient(rgb(255, 215, 159), rgb(169, 241, 233));
+
+
+
+
+
+            border-radius: 0 0 30px 30px;
+            display: flex;
+            justify-content: start;
+            column-gap: 3%;
+            padding: 30px 20px 0 30px;
+
+
+            .menuCard:hover {
+                figure {
+                    width: 205px;
+                    height: 205px;
+                }
+
+                button {
+                    width: 82%;
+                    height: 35px;
+                    background: #f12727;
+                }
+            }
+
+            .menuCard {
+                width: auto;
+                height: auto;
+                margin: 0px 0 50px 0px;
+                background-color: rgba(246, 218, 211, 0.903);
+                background-image: linear-gradient(to bottom right, rgb(206, 253, 255), rgb(252, 188, 156));
+
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                box-shadow: 7px 7px rgba(105, 105, 104, 0.748);
+
+
+                figure {
+                    width: 200px;
+                    height: 200px;
+                    margin: 15px 15px 0 15px;
+                    transition: width 0.5s, height 0.5s;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                h4 {
+                    text-align: center;
+                    font-size: 20px;
+                    margin: 15px 0 0 0;
+                }
+
+                p {
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: 20px;
+                    color: rgb(0, 34, 255);
+                    text-align: center;
+                    margin: 3px 0 0 0;
+                }
+
+                button {
+                    width: 70%;
+                    height: 35px;
+                    border: none;
+                    border-radius: 20px;
+                    background: #b80000dd;
+                    margin: 10px 0 10px 0;
+
+                    transition: width 0.5s, height 0.5s;
+
+
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: white;
+                }
+
+
+
+            }
+
+        }
+    }
+
+    div.orderList {
+        display: none;
+        visibility: hidden;
+        opacity: 0%;
+        transition: 1.5s;
+
+        width: 35%;
+        height: 600px;
+        margin: 0 0 0 20px;
+
+
+        background: rgb(229, 228, 228);
+        background-image: radial-gradient(rgb(182, 235, 255), rgb(208, 252, 225));
+
+        border-radius: 15px;
+        position: sticky;
+        top: 50px;
+        right: 0px;
+
+        .invoice {
+
+            div.dishOrderlist {
+                width: 85%;
+                max-height: 450px;
+                margin: auto;
+                margin-top: 10px;
+                flex-wrap: wrap;
+
+                overflow: auto;
+
+                .orderList_blank {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 50px;
+                    margin: 40px 0 0 0;
+                    font-family: "Great Vibes", cursive;
+                font-weight: 300px;
+                font-style: normal;
+                }
+
+                .orderCard {
+                    width: 100%;
+                    height: 100px;
+                    margin: 5px 0 5px 0px;
+                    background: rgba(246, 218, 211, 0.903);
+                    background-image: linear-gradient(to bottom right, rgb(195, 253, 255), rgb(253, 198, 170));
+
+                    box-shadow: 5px 5px rgba(105, 105, 104, 0.748);
+                    border-radius: 8px;
+                    position: relative;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+
+                    figure {
+                        width: 90px;
+                        height: 90px;
+                        margin: 0 0 0 5px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    div.infoDish {
+                        width: 150px;
+                        text-align: center;
+
+                        display: flex;
+                        flex-direction: column;
+
+                        h4 {
+                            margin: 5px 0 5px 0;
+                            font-size: 18px;
+                        }
+
+                        p {
+                            margin: 5px 0 5px 0;
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: rgb(0, 129, 6);
+                        }
+                    }
+
+                    div.qtyDish {
+                        width: auto;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 10px 0 0;
+
+                        input {
+                            width: 35px;
+                            height: 15px;
+                            border: none;
+                            text-align: center;
+                        }
+
+                        button {
+                            width: 39px;
+                            height: auto;
+
+                            text-align: center;
+                            font-weight: bold;
+                            border: none;
+                            font-size: 14px;
+                            background: #ffbb88;
+                        }
+
+                        /* Bo nut them bot mac dinh */
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+
+                    button.Del {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 5px;
+                        border: none;
+                        color: white;
+                        background: rgb(249, 51, 51);
+                        padding: 0;
+                        font-weight: bold;
+                        position: absolute;
+                        right: 2px;
+                        top: 2px;
+                    }
+
+                    button.Del:hover {
+                        box-shadow: 1px 1px gray;
+                    }
+
+
+                }
+
+            }
+
+            .Total {
+                width: 100%;
+                height: auto;
+
+                position: absolute;
+                bottom: 5px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: rgb(0, 129, 6);
+                    margin: 20px 0 0 10px;
+                    align-self: start;
+                    padding-left: 10%;
+
+                    span {
+                        position: absolute;
+                        margin-left: 20%;
+                        font-size: 20px;
+                    }
+
+                }
+
+                button {
+                    width: 70%;
+                    height: 45px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: white;
+                    border-radius: 20px;
+                    background: #b80000dd;
+                    bottom: 5px;
+                    box-shadow: 3px 3px rgb(130, 130, 130);
+                    transition: 0.5s;
+                }
+
+                button:hover {
+                    width: 100%;
+                    height: 45px;
+                    background: #ff0000dd;
+
+                }
+            }
+        }
+    }
+
+
+
+}
+
+#number {
+    width: 22px;
+    height: 20px;
+    text-align: center;
+    padding: 2px 0 0 0;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 1;
+    top: 150px;
+    right: 25px;
+}
+
+#iconList {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+
+    top: 170px;
+    right: 2px;
+}
+
+
+.fullScreen {
+    /* Animation */
+    visibility: hidden;
+    opacity: 0%;
+    transition: 0.5s;
+
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #000000;
+
+}
+
+.popupPayment {
+
+    /* Animation */
+    visibility: hidden;
+    opacity: 0%;
+    transition: 1s;
+
+    width: auto;
+    height: auto;
+    background: #fff9f9;
+    background-image: linear-gradient(to bottom left, rgb(201, 249, 249), rgb(255, 209, 188));
+
+    position: fixed;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .contactCustomer {
+        /* border: 1px solid red; */
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 0 10px;
+        row-gap: 0px;
+
+
+        div {
+            width: 95%;
+            height: auto;
+            position: relative;
+            left: 10px;
+            margin: 5px;
+            /* border: 1px solid red; */
+
+
+            label {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            #fullName,
+            #phoneNumber,
+            #emailAdd,
+            #address {
+                width: 90%;
+                height: 23px;
+                margin: 3px 0 0 0;
+            }
+
+            .paymentTitle {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            #textArea {
+                min-width: 90%;
+                min-height: 150px;
+                max-width: 90%;
+                /* max-height: 150px; */
+                font-size: 16px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    .paymentOrderList {
+        width: 450px;
+        height: auto;
+        background-image: linear-gradient(to bottom right, rgb(255, 200, 145), rgb(237, 201, 102));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        margin: 15px 15px 15px 0;
+
+
+        .priceOrderList {
+            width: 95%;
+            max-height: 500px;
+            position: relative;
+            top: 10px;
+            overflow: auto;
+
+            .pay_OrderCard {
+                width: auto;
+                height: 90px;
+                display: flex;
+                justify-content: start;
+                column-gap: 10px;
+                align-items: center;
+                margin: 5px;
+                cursor: move;
+                position: relative;
+
+                background-image: linear-gradient(to right, rgb(145, 182, 255), rgb(114, 231, 170));
+                box-shadow: 2px 2px gray;
+                border-radius: 5px;
+
+
+                figure {
+                    width: 80px;
+                    height: 80px;
+                    margin: 0px 0px 0px 5px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                div.pay_infoDish {
+                    width: 150px;
+                    text-align: center;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    h4 {
+                        margin: 5px 0 5px 0;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        margin: 5px 0 5px 0;
+                        font-weight: bold;
+                        font-size: 16px;
+                        color: rgb(0, 4, 255);
+                    }
+                }
+
+                div.pay_qtyDish {
+                    width: auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 10px 0 0;
+
+                    input {
+                        width: 35px;
+                        height: 15px;
+                        border: none;
+                        text-align: center;
+                    }
+
+                    button {
+                        width: 39px;
+                        height: auto;
+
+                        text-align: center;
+                        font-weight: bold;
+                        border: none;
+                        font-size: 14px;
+                        background: #ffbb88;
+                    }
+
+                    /* Bo nut them bot mac dinh */
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+
+                .pay_priceDish {
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    p {
+                        margin: 10px 5px;
+                    }
+
+                }
+
+                button.Del {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                    background: rgb(249, 51, 51);
+                    padding: 0;
+                    font-weight: bold;
+                    position: absolute;
+                    right: 2px;
+                    top: 2px;
+                }
+
+                button.Del:hover {
+                    box-shadow: 1px 1px gray;
+                }
+            }
+
+        }
+
+        .paymentTotal {
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0px;
+            align-items: center;
+            position: relative;
+            bottom: 0;
+            padding-top: 0px;
+
+            p {
+                width: 310px;
+                font-weight: bold;
+                font-size: 20px;
+
+                span {
+                    margin-left: 20%;
+                }
+            }
+
+            div {
+                display: flex;
+                justify-content: space-evenly;
+                column-gap: 10px;
+                margin-bottom: 10px;
+
+                button {
+                    width: 150px;
+                    height: 40px;
+                    transition: 0.5s;
+                    border-radius: 20px;
+                    background: #f06565;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: white;
+                    border: none;
+                }
+
+                button:hover {
+                    width: 200px;
+                    height: 45px;
+                    font-size: 18px;
+                    box-shadow: 2px 2px gray;
+                    background: #ff0000;
+                }
+            }
+
+        }
+
+    }
+}
+
+#errorName,#errorPhone,#errorEmail,#errorAdd{
+    width: fit-content;
+    font-size: 14px;
+    /* font-weight: bold; */
+    color: #ff0000;
+    /* background: white; */
+    border: none;
+    box-shadow: 2px 2px gray;
+    margin: 3px 0 0 0;
+}
+.redasterisk{
+    color: red;
+}
+
+
+button,
+select {
+    cursor: pointer;
+}

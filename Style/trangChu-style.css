@@ -1,0 +1,17 @@
+.TCPoster{
+    display: flex;
+    flex-direction: column;
+}
+.TCP1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    max-width: 1050px;
+    text-align: center;
+    text-transform: none;
+}
+.TCP2{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
